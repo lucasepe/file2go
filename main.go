@@ -61,9 +61,9 @@ func usage() {
 	fmt.Fprint(os.Stderr, "files, for instance as a []byte.\n\n")
 
 	fmt.Fprint(os.Stderr, "EXAMPLES:\n\n")
-	fmt.Fprintf(os.Stderr, "  date | %s 'var myDate = []byte' '}'\n\n", appName())
+	fmt.Fprintf(os.Stderr, "  date | %s 'var myDate = []byte {' '}'\n\n", appName())
 	fmt.Fprintf(os.Stderr, "will produce:\n\n")
-	fmt.Fprintf(os.Stderr, "  var myDate = []byte\n")
+	fmt.Fprintf(os.Stderr, "  var myDate = []byte {\n")
 	fmt.Fprintf(os.Stderr, "      0x46, 0x72, 0x69, 0x20, 0x4d, 0x61, 0x79, 0x20, 0x33, 0x31,\n")
 	fmt.Fprintf(os.Stderr, "      0x20, 0x31, 0x37, 0x3a, 0x31, 0x38, 0x3a, 0x34, 0x38, 0x20,\n")
 	fmt.Fprintf(os.Stderr, "      0x43, 0x45, 0x53, 0x54, 0x20, 0x32, 0x30, 0x32, 0x34, 0x0a\n")
