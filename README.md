@@ -11,11 +11,11 @@ Convert any file to Go source.
 
 SYNOPSIS:
 
-  main [string] [string]
+  file2go [string] [string]
 
 DESCRIPTION:
 
-The main utility reads a file from stdin and writes it to stdout,
+The file2go utility reads a file from stdin and writes it to stdout,
 converting each byte to its hex representation on the fly.
 
   * if the first [string] is present, it is printed before the data
@@ -26,7 +26,7 @@ files, for instance as a []byte.
 
 EXAMPLES:
 
-  date | main 'func getData() []byte {' '}'
+  date | file2go 'func getData() []byte {' '}'
 
 will produce:
 
